@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonogram Odbioru Odpadów 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2 class="title">HARMONOGRAM ODBIORU ODPADÓW 2026</h2>
+        </header>
+
+        <section class="next-collection-section" id="nextCollectionSection">
+            <p class="next-collection-text">Najbliższy odbiór: <span id="nextCollectionDate">-</span>, <span id="nextCollectionFamily">-</span></p>
+        </section>
+
+        <section class="filter-section">
+            <label class="filter-label">Pokaż:</label>
+            <div class="filter-options">
+                <label class="filter-option">
+                    <input type="radio" name="familyFilter" value="all" checked>
+                    <span>Wszystkie</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="familyFilter" value="19">
+                    <span>19</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="familyFilter" value="19A">
+                    <span>19A</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="familyFilter" value="19B">
+                    <span>19B</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="familyFilter" value="21">
+                    <span>21</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="familyFilter" value="21A">
+                    <span>21A</span>
+                </label>
+            </div>
+        </section>
+
+        <section class="schedule-section">
+            <div class="table-wrapper">
+                <table class="schedule-table" id="scheduleTable">
+                    <!-- Table will be generated dynamically by JavaScript -->
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
